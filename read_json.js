@@ -44,7 +44,7 @@ function displayData2(data) {
     var phone2 = document.getElementById("phones").value;
     var p2 = document.getElementById('phone2');
     p2.innerHTML = phone2;
-    container2.innerHTML = '<b>'+phone2+'</b>';;
+    container2.innerHTML = '<b>'+phone2+'</b>';
     for (let i = 0; i < jsonData.length; ++i) {
         if (jsonData[i]["机型"] == phone2) {
             container2.innerHTML ='CPU型号:' + jsonData[i]['CPU型号']
