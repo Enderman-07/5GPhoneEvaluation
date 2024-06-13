@@ -6,23 +6,24 @@
     <title>
         软工课设标题
     </title><!--标题-->
-    <link rel="stylesheet" type="text/css" href="软工课设.css"><!--链接.css文件-->
-    <script src="软工课设.js"></script>
+    <link rel="stylesheet" type="text/css" href="page1.css"><!--链接.css文件-->
+    <script src="change_img.js"></script>
     <script src="read_json.js"></script>
+    <script>loadJSON(change_opt)</script>
 </head>
 
 <body>
     <header> <!-- 下拉列表 -->
         <div class="logo">
-            <p>5G手机评价分析</p>
+            <p><b>5G手机评价分析</b></p>
         </div>
         <div class="menu-list">
             <div class="dropdown">
                 <button class="dropbtn">小组成员</button>
                 <div class="dropdown-content">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
+                    <p>[爬虫小分队]<br>黄萱楠、王珊</p>
+                    <p>[词云小分队]<br>郭彦乐、唐纤纤</p>
+                    <p>[前端小分队]<br>容子棋</p>
                 </div>
             </div>
             <div class="dropdown">
@@ -42,37 +43,44 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     </header><!--header部分-->
-    <div class="container"><!--left部分-->
-        <div class="left">
+    <div class="container">
+        <div class="left"><!--left部分-->
+            <br>
+            <br>
             <!-- 下拉列表 -->
-            <label id="lab" for="phones">选择一手机型号:<br></label>
-            <select id="phones" name="phones" onchange="changeImage1()">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
-            <img id="PhoneImage" src="temp1.png" alt="Phone Image" width="300" height="300">
-        </div>
-        <div class="middle"><!--middle部分-->
             <div>
-                <button class="opt_btn" id="merits" onclick="changeImage2()">优点词云</button>
-                <button class="opt_btn" id="demerits" onclick="changeImage3()">缺点词云</button>
+                <script>changeImage1()</script>
+                <label for="phones" class="lab">
+                    请选择一款手机:<br>
+                </label>
+                <select class="select" id="phones" name="phones" onchange="changeImage1(),set_null()">
+                    <option value="占位" disabled selected>⚠未选择</option>
+                </select>
             </div>
-            <img id="text" src="temp2.png" alt="test" width="700" height="400">
+            <div>
+                <img id="PhoneImage" class="img" src="background.png" alt="Phone Image" width="300" height="300">
+            </div>
+            <div>
+                <a href="#" class="button-link" onclick="goToPage2(event)">详细参数</a>
+                <script>goToPage2()</script>
+            </div>
         </div>
         <div class="right"><!--right部分-->
-            <div id="parameter">
-                手机参数
-                
-            </div> 
-            <div id="data-container"></div>
-            
+            <br>
+            <br>
+            <div>
+                <button class="opt_btn" onclick="changeImage2()">⛅ 词云</button>
+                <button class="opt_btn" onclick="changeImage3()">💬 情绪统计图</button>
+                <button class="opt_btn" onclick="changeImage4()">💭 好评差评统计图</button>
+            </div>
+            <img id="text" class="img" src="background.png" alt="text" width="600" height="375">
         </div>
     </div>
-    <footer>[本页面内容由购物平台用户评价分析所得，仅供参考]</footer><!--footer部分-->
+    <footer>
+        <p>[本页面内容由购物平台用户评价分析所得，仅供参考]</p>
+    </footer><!--footer部分-->
 </body>
 
 </html>

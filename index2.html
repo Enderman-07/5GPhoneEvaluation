@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        软工课设标题
+    </title><!--标题-->
+    <link rel="stylesheet" type="text/css" href="page2.css"><!--链接.css文件-->
+    <script src="read_json.js"></script>
+    <script>loadJSON(change_opt)</script>
+</head>
+
+<body>
+    <header> <!-- 下拉列表 -->
+        <div class="logo">
+            <p>5G手机评价分析</p>
+        </div>
+        <div class="menu-list">
+            <div class="dropdown">
+                <button class="dropbtn">小组成员</button>
+                <div class="dropdown-content">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">下拉菜单</button>
+                <div class="dropdown-content">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">下拉菜单</button>
+                <div class="dropdown-content">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header><!--header部分-->
+    <div class="up">
+        <br>
+        <br>
+        <script>loadJSON(displayData1)</script>
+        <!-- 下拉列表 -->
+        <div>
+            <label id="lab" for="phones">
+                <p>选择一手机型号对比:</p>
+            </label>
+            <select id="phones" name="phones" onchange="loadJSON(displayData2)">
+                <option value="占位" disabled selected>请选择一款手机进行比对</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div>
+                <p id="phone1"></p>
+                <p id="parameter1"></p>
+                <br>
+                <br>
+                ```
+            </div>
+        </div>
+        <div class="right"><!--right部分-->
+            <div>
+                <p id="phone2"></p>
+                <p id="parameter2"></p>
+                <br>
+                <br>
+                ```
+            </div>
+        </div>
+    </div>
+
+
+    <footer>[本页面内容由购物平台用户评价分析所得，仅供参考]</footer><!--footer部分-->
+</body>
