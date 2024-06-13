@@ -25,7 +25,7 @@ footer {
     text-align: center;
     padding-top: 20px;
     p{
-        color: #afafaf;
+        color: #ebebeb;
     }
 }
 
@@ -98,7 +98,7 @@ td {
     font-size: 16px;
     border: none;
     cursor: pointer;/*停靠时由光标变成手*/
-    width: 120px;
+    width: 140px;
 }
 
 .dropdown {
@@ -110,7 +110,7 @@ td {
     display: none;
     position: absolute;
     background-color: #293050;
-    min-width: 120px;
+    min-width: 140px;
 }
 
 .dropdown-content p {
