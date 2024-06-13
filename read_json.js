@@ -17,8 +17,8 @@ function displayData1(data) {
     var container1 = document.getElementById('parameter1');
     var phone = getURL()
     var p1 = document.getElementById('phone1');
-    p1.innerHTML = phone;
-    container1.innerHTML = '<b>'+phone+'</b>';
+    p1.innerHTML = '<b>'+phone+'</b>';
+    container1.innerHTML = phone;
     for (let i = 0; i < jsonData.length; ++i) {
         if (jsonData[i]["机型"] == phone) {
             container1.innerHTML =  'CPU型号:' + jsonData[i]['CPU型号']
@@ -43,8 +43,8 @@ function displayData2(data) {
     var container2 = document.getElementById("parameter2");
     var phone2 = document.getElementById("phones").value;
     var p2 = document.getElementById('phone2');
-    p2.innerHTML = phone2;
-    container2.innerHTML = '<b>'+phone2+'</b>';
+    p2.innerHTML = '<b>'+phone2+'</b>';
+    container2.innerHTML = phone2;
     for (let i = 0; i < jsonData.length; ++i) {
         if (jsonData[i]["机型"] == phone2) {
             container2.innerHTML ='CPU型号:' + jsonData[i]['CPU型号']
