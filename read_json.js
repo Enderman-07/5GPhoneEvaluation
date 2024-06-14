@@ -23,7 +23,6 @@ function displayData1(data) {
     image2.src = "./word_cloud/" + phone + "/" + phone + "_histgram_disadvantages.png";// 改图片
 
     p1.innerHTML = '<b>'+phone+'</b>';
-    container1.innerHTML = phone;
     for (let i = 0; i < jsonData.length; ++i) {
         if (jsonData[i]["机型"] == phone) {
             container1.innerHTML =  'CPU型号:' + jsonData[i]['CPU型号']
@@ -55,7 +54,6 @@ function displayData2(data) {
     image4.src = "./word_cloud/" + phone2 + "/" + phone2 + "_histgram_disadvantages.png";// 改图片
 
     p2.innerHTML = '<b>'+phone2+'</b>';
-    container2.innerHTML = phone2;
     for (let i = 0; i < jsonData.length; ++i) {
         if (jsonData[i]["机型"] == phone2) {
             container2.innerHTML ='CPU型号:' + jsonData[i]['CPU型号']
