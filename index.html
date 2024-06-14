@@ -54,7 +54,7 @@
                 <label for="phones" class="lab">
                     请选择一款手机:<br>
                 </label>
-                <select class="select" id="phones" name="phones" onchange="changeImage1(),set_null()">
+                <select class="select" id="phones" name="phones" onchange="changeImage(),set_null()">
                     <option value="未选择手机" disabled selected>⚠未选择</option>
                 </select>
             </div>
@@ -70,7 +70,8 @@
             <br>
             <br>
             <div>
-                <button class="opt_btn" onclick="changeImage2()">⛅ 词云</button>
+                <button class="opt_btn" onclick="changeImage1()">⛅ 优点词云</button>
+                <button class="opt_btn" onclick="changeImage2()">⛅ 缺点词云</button>
                 <button class="opt_btn" onclick="changeImage3()">💬 情绪统计图</button>
                 <button class="opt_btn" onclick="changeImage4()">💭 好评差评统计图</button>
             </div>
