@@ -14,7 +14,7 @@ function changeImage1() {
     image.src = "./word_cloud/" + phone + "/" + phone + "_wordcloud_advantages.png";
 }
 //缺点
-function changeImage1() {
+function changeImage2() {
     var phone = document.getElementById("phones").value; // 获取下拉列表的值  
     var image = document.getElementById("text"); // 获取图片元素  
     image.src = "./word_cloud/" + phone + "/" + phone + "_wordcloud_disadvantages.png";

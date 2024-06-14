@@ -18,9 +18,9 @@ function displayData1(data) {
     var p1 = document.getElementById('phone1');
 
     var image1 = document.getElementById("graph1"); 
-    image1.src = "./word_cloud/" + phone1 + "/" + phone1 + "_histgram_advantages.png";
+    image1.src = "./word_cloud/" + phone + "/" + phone + "_histgram_advantages.png";
     var image2 = document.getElementById("graph2"); 
-    image2.src = "./word_cloud/" + phone1 + "/" + phone1 + "_histgram_disadvantages.png";// 改图片
+    image2.src = "./word_cloud/" + phone + "/" + phone + "_histgram_disadvantages.png";// 改图片
 
     p1.innerHTML = '<b>'+phone+'</b>';
     container1.innerHTML = phone;
