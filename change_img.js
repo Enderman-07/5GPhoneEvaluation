@@ -2,7 +2,7 @@
 function changeImage() {
     var phone = document.getElementById("phones").value; // 获取下拉列表的值  
     var image = document.getElementById("PhoneImage"); // 获取图片元素  
-    // 根据不同的值设置不同的图片  z
+    // 根据不同的值设置不同的图片 
     image.src = "./photo/" + phone + ".jpg";
     
 }
@@ -11,26 +11,50 @@ function changeImage() {
 function changeImage1() {
     var phone = document.getElementById("phones").value; // 获取下拉列表的值  
     var image = document.getElementById("text"); // 获取图片元素  
-    image.src = "./word_cloud/" + phone + "/" + phone + "_wordcloud_advantages.png";
+    if(!phone){
+        image.src = "./word_cloud/" + phone + "/" + phone + "_wordcloud_advantages.png";
+    }
+    else{
+        image.src = "./background.png";
+    }
+
 }
 //缺点
 function changeImage2() {
     var phone = document.getElementById("phones").value; // 获取下拉列表的值  
     var image = document.getElementById("text"); // 获取图片元素  
-    image.src = "./word_cloud/" + phone + "/" + phone + "_wordcloud_disadvantages.png";
+    if(!phone){
+        image.src = "./word_cloud/" + phone + "/" + phone + "_wordcloud_disadvantages.png";
+    }
+    else{
+        image.src = "./background.png";
+    }
+
 }
 //情绪统计
 function changeImage3() {
     var phone = document.getElementById("phones").value; // 获取下拉列表的值  
     var image = document.getElementById("text"); // 获取图片元素  
-    image.src = "./word_cloud/" + phone + "/" + phone + "_emotion_analysis.png";
+    if(!phone){
+        image.src = "./word_cloud/" + phone + "/" + phone + "_emotion_analysis.png";
+    }
+    else{
+        image.src = "./background.png";
+    }
+
 }
 
 //好评差评统计
 function changeImage4() {
     var phone = document.getElementById("phones").value; // 获取下拉列表的值  
     var image = document.getElementById("text"); // 获取图片元素  
-    image.src = "./word_cloud/" + phone + "/" + phone + "_feedback.png";
+    if(!phone){
+        image.src = "./word_cloud/" + phone + "/" + phone + "_feedback.png";
+    }
+    else{
+        image.src = "./background.png";
+    }
+
 }
 
 
