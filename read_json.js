@@ -18,15 +18,9 @@ function displayData1(data) {
     var p1 = document.getElementById('phone1');
 
     var image1 = document.getElementById("graph1"); 
+    image1.src = "./word_cloud/" + phone + "/" + phone + "_histgram_advantages.png";
     var image2 = document.getElementById("graph2"); 
-    if(!phone){
-        image1.src = "./word_cloud/" + phone + "/" + phone + "_histgram_advantages.png";
-        image2.src = "./word_cloud/" + phone + "/" + phone + "_histgram_disadvantages.png";// 改图片
-    }
-    else{
-        image1.src = "./background.png";
-        image1.src = "./background.png";
-    }
+    image2.src = "./word_cloud/" + phone + "/" + phone + "_histgram_disadvantages.png";// 改图片
 
     p1.innerHTML = '<b>'+phone+'</b>';
     container1.innerHTML = phone;
@@ -56,16 +50,9 @@ function displayData2(data) {
     var p2 = document.getElementById('phone2');
 
     var image3 = document.getElementById("graph3"); 
-    
+    image3.src = "./word_cloud/" + phone2 + "/" + phone2 + "_histgram_advantages.png";
     var image4 = document.getElementById("graph4"); 
-    if(!phone2){
-        image3.src = "./word_cloud/" + phone2 + "/" + phone2 + "_histgram_advantages.png";
-        image4.src = "./word_cloud/" + phone2 + "/" + phone2 + "_histgram_disadvantages.png";// 改图片
-    }
-    else{
-        image3.src = "./background.png";
-        image4.src = "./background.png";
-    }
+    image4.src = "./word_cloud/" + phone2 + "/" + phone2 + "_histgram_disadvantages.png";// 改图片
 
     p2.innerHTML = '<b>'+phone2+'</b>';
     container2.innerHTML = phone2;
